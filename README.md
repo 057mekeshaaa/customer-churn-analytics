@@ -4,7 +4,6 @@
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikit-learn&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
 ![License-MIT](https://img.shields.io/badge/License-MIT-green)
-My very first data science project is an end-to-end pipeline where I uncovered customer attrition drivers and predicted telecom churn using SQL exploratory analysis and a Random Forest classification model.
 
 ---
 
@@ -27,15 +26,12 @@ My very first data science project is an end-to-end pipeline where I uncovered c
 
 ## Repository Structure
 * `data/` - Raw and processed datasets
-* `src/` - Python scripts (`.py`) and SQL queries (`.sql`) for data extraction, modelling, and visualisation
 * `README.md` - Project documentation
 * `churn_analysis_plots.png` - Dashboard visualisations
 
 ## How to Run
 To run this project locally:
 1. Clone the repository: `git clone https://github.com/057mekeshaaa/customer-churn-analytics.git`
-2. Install the required libraries: `pip install pandas scikit-learn matplotlib seaborn` (Note: `sqlite3` is built into Python)
-3. Navigate to the `src/` folder to view and run the scripts.
 
 ## Business Recommendations
 Based on my model's findings, the business should:
