@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from analysis import load_and_clean_data
-df = load_and_clean_data("WA_Fn-UseC_-Telco-Customer-Churn.csv")
+df = load_and_clean_data("../data/WA_Fn-UseC_-Telco-Customer-Churn.csv")
 sns.set_theme(style="whitegrid")
 fig, axes = plt.subplots(1, 2, figsize=(14, 5))
 sns.countplot(x="Contract", hue="Churn", data=df, ax=axes[0], palette="Set2")

@@ -16,7 +16,7 @@ def load_and_clean_data(file_path):
 
 
 if __name__ == "__main__":
-    df = load_and_clean_data("WA_Fn-UseC_-Telco-Customer-Churn.csv")
+    df = load_and_clean_data("../data/WA_Fn-UseC_-Telco-Customer-Churn.csv")
     print("Cleaned Dataset Shape:", df.shape)
     print("Churn Distribution:\n", df['Churn'].value_counts())
     print("\nData Sample:\n", df.head())

@@ -1,6 +1,6 @@
 import pandas as pd
 import sqlite3
-df = pd.read_csv("WA_Fn-UseC_-Telco-Customer-Churn.csv")
+df = pd.read_csv("../data/WA_Fn-UseC_-Telco-Customer-Churn.csv")
 conn = sqlite3.connect(":memory:")
 df.to_sql("telco_churn", conn, index=False, if_exists="replace")
 with open("churn_analysis.sql", "r") as file:

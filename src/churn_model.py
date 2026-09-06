@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score
 from analysis import load_and_clean_data
-df = load_and_clean_data("WA_Fn-UseC_-Telco-Customer-Churn.csv")
+df = load_and_clean_data("../data/WA_Fn-UseC_-Telco-Customer-Churn.csv")
 X = df.drop(columns=['Churn'])
 y = df['Churn']
 X = pd.get_dummies(X, drop_first=True)
@@ -12,7 +12,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, roc_auc_score
 from analysis import load_and_clean_data
-df = load_and_clean_data("WA_Fn-UseC_-Telco-Customer-Churn.csv")
+df = load_and_clean_data("../data/WA_Fn-UseC_-Telco-Customer-Churn.csv")
 X = df.drop(columns=['Churn'])
 y = df['Churn']
 X = pd.get_dummies(X, drop_first=True)
