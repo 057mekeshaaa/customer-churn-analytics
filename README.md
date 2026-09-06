@@ -6,6 +6,8 @@
 ![License-MIT](https://img.shields.io/badge/License-MIT-green)
 
 ---
+My very first data science project is an end-to-end pipeline where I uncovered customer attrition drivers and predicted telecom churn using SQL exploratory analysis and a Random Forest classification model.
+
 
 ## Key Results
 * **Machine Learning Performance:** I achieved **79% accuracy** and an **82.5% ROC-AUC** score.
