@@ -5,32 +5,41 @@
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
 ![License-MIT](https://img.shields.io/badge/License-MIT-green)
 
-An end-to-end data science project uncovering customer attrition drivers and predicting telecom churn using SQL exploratory analysis and a Random Forest classification model.
+An end-to-end data science project where I uncovered customer attrition drivers and predicted telecom churn using SQL exploratory analysis and a Random Forest classification model.
 
 ---
 
 ## Key Results
-* **Machine Learning Performance:** Achieved **79% accuracy** and an **82.5% ROC-AUC** score.
-* **SQL Key Drivers:** Identified Month-to-month contracts (**42.7% churn rate**) and higher monthly charges as the primary drivers of customer attrition.
+* **Machine Learning Performance:** I achieved **79% accuracy** and an **82.5% ROC-AUC** score.
+* **SQL Key Drivers:** I identified month-to-month contracts (**42.7% churn rate**) and higher monthly charges as the primary drivers of customer attrition.
 
 ---
 
 ## Visual Dashboard
-![Churn Analysis Visualizations](churn_analysis_plots.png)
+![Churn Analysis Visualisations](churn_analysis_plots.png)
 
 ---
 
 ## Project Architecture
+* **Data Ingestion & SQL:** I imported raw Telco CSV data into a local SQLite database and ran aggregate queries to find baseline churn rates across demographics.
+* **Exploratory Data Analysis (EDA):** I used Pandas and Matplotlib/Seaborn to visualise correlations (e.g., tenure length vs. churn probability).
+* **Data Preprocessing:** I handled missing values, applied One-Hot Encoding for categorical variables, and scaled numerical features.
+* **Machine Learning:** I trained a Random Forest Classifier, evaluating my model's performance using Accuracy, Precision, Recall, and ROC-AUC.
 
-```text
-customer-churn-analytics/
-├── .gitignore
-├── LICENSE
-├── README.md
-├── WA_Fn-UseC_-Telco-Customer-Churn.csv  # Raw dataset
-├── analysis.py                           # Ingestion & data cleaning
-├── churn_analysis.sql                    # SQL analytics queries
-├── churn_analysis_plots.png              # Generated dashboard
-├── churn_model.py                        # Scikit-learn ML pipeline
-├── run_sql.py                            # SQLite database connector
-└── visualise.py                          # Seaborn visualization script
+## Repository Structure
+* `data/` - Raw and processed datasets
+* `notebooks/` - Jupyter notebooks for EDA and ML
+* `sql_queries.sql` - SQL scripts for data extraction
+* `README.md` - Project documentation
+* `churn_analysis_plots.png` - Dashboard visualisations
+
+## How to Run
+To run this project locally:
+1. Clone the repository: `git clone https://github.com/057mekeshaaa/customer-churn-analytics.git`
+2. Install the required libraries: `pip install pandas scikit-learn matplotlib seaborn sqlite3`
+3. Open the Jupyter Notebook in the `notebooks/` folder to view my code.
+
+## Business Recommendations
+Based on my model's findings, the business should:
+1. Incentivise customers to switch from month-to-month to 1-year or 2-year contracts by offering a small discount.
+2. Investigate the services tied to higher monthly charges, as these customers are at the highest risk of leaving.
